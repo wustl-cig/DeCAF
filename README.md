@@ -6,7 +6,7 @@ Available datasets:
 - Cells_b
 - Cells_c
 - Celegans_head
-- Celegans_middle
+- Celegans_middle (body)
 Data avaliable at https://drive.google.com/file/d/16XMJvbrAVacskfLDNGQxnBplLjvAL-7D/view?usp=sharing
 Please move data to ```datasets/DATASET_NAME/input/DATASET_NAME.mat```
 

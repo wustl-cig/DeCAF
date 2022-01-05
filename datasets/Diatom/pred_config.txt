@@ -1,0 +1,15 @@
+--input_dir=datasets/Diatom/input/Diatom.mat
+--model_save_dir=datasets/Diatom/trained_model/model
+--dia_digree=45.0
+--output_scale=5.0
+--tf_summary_dir=datasets/Diatom/trained_model/
+--xy_encoding_num=9
+--z_encoding_num=6
+--task_type=aidt
+--result_save_dir=datasets/Diatom/inference/
+--z_min=-10
+--z_max=16
+--z_delta=0.25
+--n0=1.47
+--render_max=0.03
+--render_min=-0.03

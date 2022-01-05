@@ -1,0 +1,15 @@
+--input_dir=datasets/Cells_c/input/Cells_c.mat
+--model_save_dir=datasets/Cells_c/trained_model/model
+--dia_digree=30.0
+--output_scale=5.0
+--tf_summary_dir=datasets/Cells_c/trained_model/
+--xy_encoding_num=8
+--z_encoding_num=5
+--task_type=aidt
+--result_save_dir=datasets/Cells_c/inference/
+--z_min=-8
+--z_max=8
+--z_delta=0.25
+--n0=1.33
+--render_max=0.02
+--render_min=-0.02

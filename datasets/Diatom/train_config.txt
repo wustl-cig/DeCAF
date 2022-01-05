@@ -1,0 +1,16 @@
+--epochs=60000
+--input_dir=datasets/Diatom/input/Diatom.mat
+--model_save_dir=datasets/Diatom/models/
+--name=Leaky_ReLU_DnCNN_96x96_xy_9_1e-06_z_6_3e-08
+--DnCNN_model_path=trained_regularizer/sig1/model
+--dia_digree=45.0
+--mlp_skip_layer=5
+--output_scale=5.0
+--regularize_weight=1e-06
+--start_epoch=0
+--tf_summary_dir=datasets/Diatom/models/
+--tv3d_z_reg_weight=3e-08
+--xy_encoding_num=9
+--z_encoding_num=6
+--task_type=aidt
+--view_size=96

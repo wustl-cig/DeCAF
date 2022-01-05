@@ -1,0 +1,16 @@
+--input_dir=datasets/Algae/input/Algae.mat
+--model_save_dir=datasets/Algae/trained_model/model
+--dia_digree=9.0
+--output_scale=5.0
+--tf_summary_dir=datasets/Algae/trained_model/
+--xy_encoding_num=7
+--z_encoding_num=5
+--task_type=idt
+--result_save_dir=datasets/Algae/inference/
+--z_min=-30
+--z_max=50
+--z_delta=2
+--n0=1.33
+--render_max=0.03
+--render_min=-0.03
+--z_train_delta=2

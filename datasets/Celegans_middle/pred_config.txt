@@ -1,0 +1,15 @@
+--input_dir=datasets/Celegans_middle/input/Celegans_middle.mat
+--model_save_dir=datasets/Celegans_middle/trained_model/model
+--dia_digree=6.0
+--output_scale=20.0
+--tf_summary_dir=datasets/Celegans_middle/trained_model/
+--xy_encoding_num=9
+--z_encoding_num=6
+--task_type=midt
+--result_save_dir=datasets/Celegans_middle/inference/
+--z_min=-10
+--z_max=10
+--z_delta=0.25
+--n0=1.33
+--render_max=0.01
+--render_min=-0.01

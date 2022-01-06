@@ -8,7 +8,7 @@ Available datasets:
 - Celegans_head
 - Celegans_middle (body)
 
-Data avaliable at https://drive.google.com/drive/folders/1maQxPFHFcouoEFOUo7e5FJSN2hBT78eB.
+Data avaliable at https://drive.google.com/drive/folders/1maQxPFHFcouoEFOUo7e5FJSN2hBT78eB?usp=sharing.
 Please move data to ```datasets/DATASET_NAME/input/DATASET_NAME.mat```
 
 Run inference:

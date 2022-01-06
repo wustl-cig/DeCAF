@@ -40,6 +40,7 @@ dependencies:
     - h5py==3.1.0
     - idna==3.3
     - imageio==2.13.5
+    - imageio-ffmpeg==0.4.5
     - importlib-metadata==4.10.0
     - keras==2.6.0
     - keras-preprocessing==1.1.2

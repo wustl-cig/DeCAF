@@ -41,7 +41,7 @@ python predict.py --flagfile=datasets/DATASET_NAME/train_config.txt
 
 Example:
 ```
-python predict.py --flagfile=datasets/Celegans_middle/pred_config.txt
+python predict.py --flagfile=datasets/Cells_c/pred_config.txt
 ```
 
 ## Expected outputs

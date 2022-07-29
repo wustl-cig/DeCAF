@@ -1,5 +1,6 @@
 # DECAF
 [![DOI](https://zenodo.org/badge/444957070.svg)](https://zenodo.org/badge/latestdoi/444957070)
+
 This is the code repo for the paper ['*Recovery of Continuous 3D Refractive Index Maps from Discrete Intensity-Only Measurements using Neural Fields*'](https://arxiv.org/abs/2112.00002) (previously known as '*Zero-Shot Learning of Continuous 3D Refractive Index Maps from Discrete Intensity-Only Measurements*').
 
 ## Download datasets

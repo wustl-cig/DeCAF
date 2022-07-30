@@ -20,12 +20,15 @@ import logging
 # Model parameters
 flags.DEFINE_string("tf_summary_dir", "log", "directory for tf summary log")
 flags.DEFINE_enum(
-    "positional_encoding_type", "exp_diag", ["exp_diag"], "positional_encoding_type",)
+    "positional_encoding_type", "exp_diag", ["exp_diag", "exp", "fourier_fixed_xy"], "positional_encoding_type",)
 flags.DEFINE_float("dia_digree", 45, "degrees per each encoding in exp_diag")
 flags.DEFINE_enum(
     "mlp_activation", "leaky_relu", ["leaky_relu"], "Activation functions for mlp",)
 flags.DEFINE_integer("mlp_layer_num", 10, "number of layers in mlp network")
 flags.DEFINE_integer("mlp_kernel_size", 208, "width of mlp")
+flags.DEFINE_integer('fourier_encoding_size', 256, "number of rows in fourier matrix")
+flags.DEFINE_float("sig_xy", 26.0, "Fourier encoding sig_xy")
+flags.DEFINE_float("sig_z", 1.0, "Fourier encoding sig_z")
 flags.DEFINE_integer(
     "xy_encoding_num", 6, "number of frequecncies expanded in the spatial dimensions"
 )
@@ -222,8 +225,30 @@ class Model:
                         axis=-1,
                     )
                     tot_freq = tf.concat([tot_freq, cur_freq], axis=-1)
+            elif FLAGS.positional_encoding_type == 'exp':
+                for l in range(L_xy):  # fourier feature map
+                    indicator = np.array([1., 1., 1. if l < L_z else 0.])
+                    cur_freq = tf.concat([tf.sin(indicator * 2 ** l * np.pi * in_node),
+                                          tf.cos(indicator * 2 ** l * np.pi * in_node)], axis=-1)
+                    if l is 0:
+                        tot_freq = cur_freq
+                    else:
+                        tot_freq = tf.concat([tot_freq, cur_freq], axis=-1)
+            elif FLAGS.positional_encoding_type == 'fourier_fixed_xy':
+                np.random.seed(10)
+                fourier_mapping = np.random.normal(0, FLAGS.sig_xy, (FLAGS.fourier_encoding_size, 2)).astype('float32')
+                
+                xy_freq = tf.matmul(in_node[:, :2], fourier_mapping.T)
+                xy_freq = tf.concat([tf.sin(2 * np.pi * xy_freq),
+                          tf.cos(2 * np.pi * xy_freq)], axis=-1)
+                
+                tot_freq = xy_freq        
+                for l in range(L_z):
+                    cur_freq = tf.concat([tf.sin(2 ** l * np.pi * in_node[:, 2][:, None]),
+                                          tf.cos(2 ** l * np.pi * in_node[:, 2][:, None])], axis=-1)   
+                    tot_freq = tf.concat([tot_freq, cur_freq], axis=-1)
             else:
-                raise NotImplementedError
+                raise NotImplementedError(FLAGS.positional_encoding_type)
             # input to MLP
             in_node = tot_freq
             # input encoder

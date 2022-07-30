@@ -1,1 +1,6 @@
 *.DS_Store
+**/input
+**/inference
+**/.ipynb_checkpoints
+**/__pycache__
+

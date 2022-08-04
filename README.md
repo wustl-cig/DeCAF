@@ -5,12 +5,14 @@ This is the code repo for the paper ['*Recovery of Continuous 3D Refractive Inde
 
 ## Download datasets
 Available datasets:
-- Algae
-- Diatom
-- Cells_b
-- Cells_c
-- Celegans_head
-- Celegans_middle (body)
+- Algae (Figure 2)
+- Diatom (aidt, Figure 3)
+- Diatom (mdit, Extended Figure 1)
+- Cells_b (Figure 4)
+- Cells_c (Figure 4)
+- Celegans_head (Figure 5)
+- Celegans_body (Figure 5)
+- Simulated granulocyte cluster (Figure 6)
 
 Data avaliable at https://drive.google.com/drive/folders/1maQxPFHFcouoEFOUo7e5FJSN2hBT78eB?usp=sharing.
 Please move data to ```datasets/DATASET_NAME/input/DATASET_NAME.mat```

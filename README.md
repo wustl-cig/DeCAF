@@ -13,6 +13,7 @@ Available datasets:
 - Celegans_head (Figure 5)
 - Celegans_body/middle (Figure 5)
 - Simulated granulocyte cluster (Figure 6)
+- Yanny's data (Supplementary)
 
 Data avaliable at https://drive.google.com/drive/folders/1maQxPFHFcouoEFOUo7e5FJSN2hBT78eB?usp=sharing.
 Please move data to ```datasets/DATASET_NAME/input/DATASET_NAME.mat```

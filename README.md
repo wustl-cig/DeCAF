@@ -7,7 +7,7 @@ This is the code repo for the paper ['*Recovery of Continuous 3D Refractive Inde
 Available datasets:
 - Algae (Figure 2)
 - Diatom (aidt, Figure 3)
-- Diatom (mdit, Extended Figure 1)
+- Diatom_midt (mdit, Extended Figure 1)
 - Cells_b (Figure 4)
 - Cells_c (Figure 4)
 - Celegans_head (Figure 5)

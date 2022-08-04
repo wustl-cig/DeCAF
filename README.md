@@ -11,7 +11,7 @@ Available datasets:
 - Cells_b (Figure 4)
 - Cells_c (Figure 4)
 - Celegans_head (Figure 5)
-- Celegans_body (Figure 5)
+- Celegans_body/middle (Figure 5)
 - Simulated granulocyte cluster (Figure 6)
 
 Data avaliable at https://drive.google.com/drive/folders/1maQxPFHFcouoEFOUo7e5FJSN2hBT78eB?usp=sharing.

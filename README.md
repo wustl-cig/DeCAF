@@ -3,6 +3,8 @@
 
 This is the code repo for the paper ['*Recovery of Continuous 3D Refractive Index Maps from Discrete Intensity-Only Measurements using Neural Fields*'](https://arxiv.org/abs/2112.00002) (previously known as '*Zero-Shot Learning of Continuous 3D Refractive Index Maps from Discrete Intensity-Only Measurements*').
 
+[Project page](https://renhao116.github.io/DeCAF_page/).
+
 ## Download datasets
 Available datasets:
 - Algae

@@ -42,7 +42,7 @@ python predict.py --flagfile=datasets/DATASET_NAME/pred_config.txt
 
 Run training:
 ```
-python predict.py --flagfile=datasets/DATASET_NAME/train_config.txt
+python main.py --flagfile=datasets/DATASET_NAME/train_config.txt
 ```
 **NOTE**: We trained the model on a machine equipped with one AMD Threadripper 3960X 24-core CPU and four Nvidia RTX 3090 GPUs. We parallelized the training of DeCAF over two GPUs to accelerate the convergence. Under this setup, it approximately takes one day to train the model.
 
